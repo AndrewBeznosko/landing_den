@@ -3244,7 +3244,7 @@ body {
   background: #FFF;
 }
 body .wrapper {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 body .container {
   position: relative;
@@ -3254,8 +3254,11 @@ body p {
 }
 body .min-title {
   font-weight: 500;
-  font-size: 26px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 25px;
+}
+body .mtt-1 + .min-title {
+  font-weight: normal;
 }
 body .title {
   font-weight: 700;
@@ -3619,7 +3622,7 @@ body .month .program .p-row .row > div {
   margin-bottom: 37px;
 }
 body .month .program .p-row .pp-left .min-title:not(.mtt-1) {
-  margin: 13px 0 18px 0;
+  margin: 10px 0 18px 0;
 }
 body .month .program .p-row .pp-left .mtt-1 {
   display: -webkit-flex;
@@ -3646,6 +3649,7 @@ body .month .program .p-row .pp-right {
   padding: 40px 25px 42px 50px;
   border-radius: 12px;
 }
+
 body .month .program .p-row .pp-right.pp-r-3 {
   position: relative;
 }
@@ -3926,7 +3930,7 @@ body .packets .p-blocks .p-block .benefit .b-top p {
   font-weight: 500;
 }
 body .packets .p-blocks .p-block.pab-1 .p-bottom {
-  margin: 308px 0 25px 0;
+  margin: 70px 0 25px 0;
 }
 body .packets .p-blocks .p-block.pab-2 {
   position: relative;
@@ -4269,7 +4273,7 @@ body .modal#back-modal .modal-dialog .modal-content .m-bottom .min-title {
     background: #fff;
   }
   body .result {
-    padding: 50px 0 95px 0px;
+    padding: 290px 0 95px 0px;
   }
   body .month {
     padding: 90px 0 90px 0;
@@ -4352,7 +4356,7 @@ body .modal#back-modal .modal-dialog .modal-content .m-bottom .min-title {
     padding: 50px 0;
   }
   body .packets .p-blocks .p-block.pab-1 .p-bottom {
-    margin: 339px 0 25px 0;
+    margin: 50px 0 25px 0;
   }
   body .packets .p-blocks .p-block .p-bottom .new {
     font-size: 34px;
@@ -4370,7 +4374,7 @@ body .modal#back-modal .modal-dialog .modal-content .m-bottom .min-title {
     left: -211px;
   }
   body .packets .p-blocks .p-block.pab-1 .p-bottom {
-    margin: 301px 0 25px 0;
+    margin: 50px 0 25px 0;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -4968,9 +4972,11 @@ body .form-modal .modal-dialog .modal-content .modal-body {
 
 .form-modal .progress-img {
   position: absolute;
-  top: 0px;
+  top: 10px;
   width: 100%;
   height: auto;
+  -webkit-filter: hue-rotate(130deg);
+  filter: hue-rotate(130deg);
 }
 
 .form-modal form input,
@@ -5000,6 +5006,16 @@ body .form-modal .modal-dialog .modal-content .modal-body {
     min-height: 65px;
 }
 
+@media (min-width: 992px) {
+  body .header .h-icons .hi-right {
+   max-width: 60%;
+  }
+
+  body .header .h-icons .hi-right img{
+   width: 100%;
+  }
+}
+ 
 @media (max-width: 767px) {
   .form-modal .title {
       font-size: 32px;
