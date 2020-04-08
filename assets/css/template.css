@@ -5183,6 +5183,10 @@ form button {
     position: relative;
 }
 
+.complect-info img {
+  max-width: 100px;
+}
+
 .complect-info {
     display: flex;
     align-items: center;
@@ -5192,7 +5196,6 @@ form button {
 .complect-info .text {
     font-size: 18px;
     line-height: 1;
-    margin-right: 30px;
     min-width: 160px;
 }
 
@@ -5280,6 +5283,9 @@ form button {
   }
   .complect-info {
     justify-content: center;
+  }
+  .complect-info img {
+    max-width: 50px;
   }
   .one-section .complect-info {
     padding-top: 25px;
