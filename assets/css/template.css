@@ -3753,6 +3753,11 @@ body .speakers .s-block {
   padding: 0 0 42px;
   border-radius: 12px;
   border: 1px solid #d0d0d0;
+  overflow: hidden;
+}
+body .speakers .s-block .s-img {
+  display: flex;
+  justify-content: center;
 }
 body .speakers .s-block .s-img img {
   margin: -1px;
@@ -4027,7 +4032,7 @@ body .feeds .slider {
   margin: 60px 0 0 0;
 }
 body .feeds .slider img {
-  max-width: 100%;
+  max-width: 350px;
 }
 body .feeds .slider .arrows a {
   background: none;
