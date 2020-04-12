@@ -4600,6 +4600,7 @@ body .modal#back-modal .modal-dialog .modal-content .m-bottom .min-title {
   }
   body .month .for-title p {
     margin: 15px 0 40px 0;
+    font-size: 24px;
   }
 @media (max-width: 767px) {
   body .month .program .p-icons {
@@ -4609,8 +4610,7 @@ body .modal#back-modal .modal-dialog .modal-content .m-bottom .min-title {
   }
 }
   body .month .program .title {
-    margin: 0 0 47px 0;
-    text-align: left;
+    display: none;
   }
   body .month .program .p-rows {
     border-radius: 0px;
@@ -4850,6 +4850,9 @@ body .modal#back-modal .modal-dialog .modal-content .m-bottom .min-title {
   }
   body .create .mtt {
     text-align: left;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0% 5%;
   }
   body .create .for-title .title {
     margin: 18px 0 30px 0;
