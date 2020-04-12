@@ -3409,15 +3409,30 @@ body .header .h-icons .hi-left {
   top: -33px;
   z-index: 5;
 }
+@media (max-width: 767px) {
+  body .header .h-icons .hi-left {
+    display: none;
+  }
+}
 body .header .h-icons .hi-right {
   right: 0;
   top: 155px;
+}
+@media (max-width: 767px) {
+  body .header .h-icons .hi-right {
+    display: none;
+  }
 }
 body .header .h-row .row {
   align-items: center;
 }
 body .header .h-row .h-img img {
   max-width: 671px;
+}
+@media (max-width: 767px){
+  body .header .h-row .h-img{
+    min-height: 330px;
+  }
 }
 body .header .h-top .for-title .title {
   transform: rotate(-4deg);
@@ -4581,11 +4596,13 @@ body .modal#back-modal .modal-dialog .modal-content .m-bottom .min-title {
   body .month .for-title p {
     margin: 15px 0 40px 0;
   }
+@media (max-width: 767px) {
   body .month .program .p-icons {
-    top: 0;
-    right: -50px;
+    top: 90px;
+    right: -85px;
     z-index: 4;
   }
+}
   body .month .program .title {
     margin: 0 0 47px 0;
     text-align: left;
@@ -4910,7 +4927,7 @@ body .modal#back-modal .modal-dialog .modal-content .m-bottom .min-title {
   body .modal#back-modal .modal-dialog .modal-content .m-middle {
     margin: 25px 0 25px 0;
   }
- 
+
   body .modal#back-modal .modal-dialog .modal-content .m-middle .title {
     padding: 3px 7px;
     font-size: 25px;
@@ -5015,7 +5032,7 @@ body .form-modal .modal-dialog .modal-content .modal-body {
    width: 100%;
   }
 }
- 
+
 @media (max-width: 767px) {
   .form-modal .title {
       font-size: 32px;
@@ -5291,7 +5308,7 @@ form button {
     padding-top: 25px;
     padding-bottom: 18px;
     position: relative;
-  } 
+  }
   .complect-info .text {
     font-size: 10px;
     min-width: auto;
