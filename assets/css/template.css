@@ -3921,12 +3921,22 @@ body .packets .p-blocks .p-block .p-bottom .old {
 body .packets .p-blocks .p-block .p-bottom .old:before {
   position: absolute;
   content: "";
-  left: 30px;
-  top: 50px;
+  left: 50%;
+  top: 50%;
   width: 90%;
   height: 5px;
   background: #ac2625;
-  transform: rotate(-15deg);
+  transform: translate(-50%, -50%) rotate(-15deg);
+}
+body .packets .p-blocks .p-block .p-bottom .old:after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  width: 90%;
+  height: 5px;
+  background: #ac2625;
+  transform: translate(-50%, -50%) rotate(15deg);
 }
 body .packets .p-blocks .p-block .p-bottom .new {
   font-size: 48px;
@@ -4778,11 +4788,18 @@ body .modal#back-modal .modal-dialog .modal-content .m-bottom .min-title {
     color: #616161;
   }
   body .packets .p-blocks .p-block .p-bottom .old:before {
-    left: 0;
-    top: 13px;
-    width: 100%;
+    left: 50%;
+    top: 50%;
+    width: 90%;
     height: 2px;
-    transform: rotate(-5deg);
+    transform: translate(-50%, -50%) rotate(-12deg);
+  }
+  body .packets .p-blocks .p-block .p-bottom .old:after {
+    left: 50%;
+    top: 50%;
+    width: 90%;
+    height: 2px;
+    transform:  translate(-50%, -50%) rotate(12deg);
   }
   body .packets .p-blocks .p-block .p-bottom .new {
     font-size: 36px;
